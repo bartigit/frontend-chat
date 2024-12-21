@@ -33,7 +33,7 @@ body {
   padding: 20px;
   background: #1e1e1e;
   flex-grow: 1;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   margin: 0;
 }
 
