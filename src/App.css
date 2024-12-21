@@ -1,0 +1,162 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #121212; 
+  color: #e0e0e0; 
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  padding: 20px;
+  background: #1e1e1e;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  word-wrap: break-word;
+  display: inline-block;
+  clear: both;
+}
+
+.incoming {
+  align-self: flex-start;
+  background: #2a2a2a; 
+  color: #e0e0e0;
+}
+
+.outgoing {
+  align-self: flex-end;
+  background: #324883; 
+  color: #ffffff; 
+}
+
+.message-user {
+  text-align: right;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #aaaaaa; 
+}
+
+.message-text {
+  font-size: 0.95rem;
+}
+
+.message-input-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #333; 
+  position: sticky;
+  bottom: 0;
+  background: #1e1e1e; 
+  z-index: 10;
+}
+
+.message-input {
+  flex-grow: 1;
+  border-radius: 20px;
+  border: 1px solid #333; 
+  padding: 10px;
+  margin-right: 10px;
+  background: #949494;
+  color: #e0e0e0; 
+}
+
+.send-button {
+  border-radius: 20px;
+  padding: 0 20px;
+  background: #324883; 
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: #324883; 
+}
+
+.dark-modal .modal-content {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: none;
+}
+
+.dark-modal .modal-header,
+.dark-modal .modal-footer {
+  border: none; 
+  background-color: #2a2a2a; 
+}
+
+.dark-modal .modal-title {
+  color: #ffffff;
+}
+
+.dark-modal .form-label {
+  color: #e0e0e0; 
+}
+
+.dark-modal .form-control {
+  background-color: #8f8f8f; 
+  color: #ffffff;
+  border: 1px solid #333; 
+}
+
+.dark-modal .btn-primary {
+  background-color: #324883;
+  color: #ffffff;
+  border: none;
+}
+
+.dark-modal .btn-primary:hover {
+  background-color: #324883;
+}
+
+.dark-modal .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dark-modal .logo {
+  max-width: 100px; 
+  height: auto; 
+}
+
+.dark-modal .modal-header {
+  border-bottom: none; 
+  text-align: center;
+}
+
+.dark-modal .modal-title {
+  color: #e0e0e0;
+}
